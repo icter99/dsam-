@@ -85,10 +85,11 @@ python MSCAF_COD_evaluation/evaluation.py
 If you find this project useful, please consider citing:
 
 ```bibtex
-@article{yu2024exploring,
-  title={Exploring Deeper! Segment Anything Model with Depth Perception for Camouflaged Object Detection},
-  author={Yu, Zhenni and Zhang, Xiaoqin and Zhao, Li and Bin, Yi and Xiao, Guobao},
-  journal={arXiv preprint arXiv:2407.12339},
-  year={2024}
+@inproceedings{yu2024exploring,
+title={Exploring Deeper! Segment Anything Model with Depth Perception for Camouflaged Object Detection},
+author={Zhenni Yu and Xiaoqin Zhang and LiZhao and Yi Bin and Guobao Xiao},
+booktitle={ACM Multimedia 2024},
+year={2024},
+url={https://openreview.net/forum?id=d4A0Cw1gVS}
 }
 ```
