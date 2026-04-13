@@ -70,10 +70,10 @@ parser.add_argument("--model_type", type=str, default="vit_b", help="model type"
 parser.add_argument(
     "--checkpoint",
     type=str,
-    default="work_dir/SAM/sam_vit_b_01ec64.pth",
+    default="work_dir_cod/SAM/sam_vit_b_01ec64.pth",
     help="checkpoint",
 )
-parser.add_argument("--device", type=str, default="cuda:2", help="device")
+parser.add_argument("--device", type=str, default="cuda:0", help="device")
 parser.add_argument("--seed", type=int, default=2023, help="random seed")
 
 # parse the arguments

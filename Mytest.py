@@ -21,13 +21,13 @@ np.random.seed(1)
 # %% run inference
 # set up the parser
 parser = argparse.ArgumentParser(description='run inference on testing set')
-parser.add_argument('-i', '--data_path', type=str, default='data/vit_b/COD_test', help='path to the data folder')
-parser.add_argument('-o', '--seg_path_root', type=str, default='data/inference_npz/DSAM',
+parser.add_argument('-i', '--data_path', type=str, default='data/COD_test_vit_b', help='path to the data folder')
+parser.add_argument('-o', '--seg_path_root', type=str, default='data/results',
                     help='path to the segmentation folder')
 parser.add_argument('--seg_png_path', type=str, default='data/inference_img/DSAM',
                     help='path to the segmentation folder')
 parser.add_argument('--model_type', type=str, default='vit_b', help='model type')
-parser.add_argument('--device', type=str, default='cuda:1', help='device')
+parser.add_argument('--device', type=str, default='cuda:0', help='device')
 parser.add_argument('-chk', '--checkpoint', type=str, default='work_dir_cod/DSAM/DSAM.pth',
                     help='path to the trained model')
 args = parser.parse_args()
