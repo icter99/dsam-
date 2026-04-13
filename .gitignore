@@ -1,0 +1,113 @@
+# =============================================================================
+# DSAM — 数据集、预处理/推理产物、大模型权重（勿提交）
+# 与 README / Mytrain.py / Mytest.py / pre_npz.py 中的路径一致
+# =============================================================================
+
+# ----- 原始与派生数据（README：COD + depth 置于 data/） -----
+data/TrainDataset/
+data/TestDataset/
+data/Train_depth/
+data/Test_depth/
+
+# pre_npz / 训练读入的打包特征与划分目录
+data/npz/
+data/npz_*/
+data/vit_b/
+
+# 推理输出
+data/inference_npz/
+data/inference_img/
+
+# 常见压缩包与整包数据集
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+# 大块数值文件（预处理 npz、embedding 等）
+*.npz
+*.npy
+
+# ----- 预训练与训练得到的权重 -----
+work_dir_cod/
+work_dir/
+*.pth
+*.pt
+*.ckpt
+*.pth.tar
+*.safetensors
+*.onnx
+*.engine
+*.trt
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+
+# 虚拟环境
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ----- 工具与密钥 -----
+.env
+.env.*
+*.pem
+
+# ----- IDE / OS -----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ----- 实验与日志（按需） -----
+wandb/
+runs/
+outputs/
+*.log

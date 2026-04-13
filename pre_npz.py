@@ -57,7 +57,7 @@ parser.add_argument(
 parser.add_argument(
     "--data_name",
     type=str,
-    default="COD_Test_CAMO",
+    default="COD_Train",
     help="dataset name; used to name the final npz file, e.g., demo2d.npz",
 )
 parser.add_argument("--image_size", type=int, default=256, help="image size")
