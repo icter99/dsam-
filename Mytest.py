@@ -139,15 +139,19 @@ sam_model_tune = sam_model_registry[args.model_type](checkpoint=args.checkpoint)
 
 sam_trans = ResizeLongestSide(sam_model_tune.image_encoder.img_size)
 
-npz_folders = sorted(os.listdir(args.data_path))
+# npz_folders = sorted(os.listdir(args.data_path))
+npz_folders = [args.data_path]
 os.makedirs(args.seg_png_path, exist_ok=True)
 sam_dice_scores = []
 for npz_folder in npz_folders:
-    npz_data_path = join(args.data_path, npz_folder)
-    save_path = join(args.seg_path_root, npz_folder)
+    # npz_data_path = join(args.data_path, npz_folder)
+    npz_data_path = args.data_path
+    # save_path = join(args.seg_path_root, npz_folder)
+    save_path = args.seg_path_root
     if not os.path.exists(save_path):
         os.makedirs(save_path, exist_ok=True)
-        npz_files = sorted(os.listdir(npz_data_path))
+        # npz_files = sorted(os.listdir(npz_data_path))
+        npz_files = [f for f in os.listdir(npz_data_path) if f.endswith('.npz')]
         for npz_file in tqdm(npz_files):
             try:
                 npz = np.load(join(npz_data_path, npz_file))

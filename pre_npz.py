@@ -345,7 +345,8 @@ if len(imgs) > 1:
     depth_embeddings = np.stack(depth_embeddings, axis=0)  # (n, 1, 256, 64, 64)
     boundary = np.stack(boundary, axis=0)  # (n, 256, 256)
     np.savez_compressed(
-        join(save_path, args.data_name + ".npz"),
+        # join(save_path, args.data_name + ".npz"),
+        join(save_path, args.data_name, args.data_name + ".npz"),
         imgs=imgs,
         gts=gts,
         depth_imgs=depth_imgs,
