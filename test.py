@@ -174,15 +174,6 @@ for npz_file in tqdm(npz_files):
 
             save_path_png = os.path.join(args.seg_path_root, save_name)
             cv2.imwrite(save_path_png, seg_mask * 255)
-        # save npz
-        np.savez_compressed(
-            join(save_path, npz_file),
-            medsam_segs=sam_segs,
-            gts=ori_gts,
-            number=ori_number,
-            sam_bboxes=sam_bboxes
-        )
-
         # visualize
         img_id = np.random.randint(0, len(ori_imgs))
         fig, axes = plt.subplots(1, 2, figsize=(10, 5))

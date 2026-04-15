@@ -1,0 +1,559 @@
+===== 产生CAMO.npz =====
+/root/miniconda3/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/root/miniconda3/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:387: UserWarning: Overwriting pvt_v2_b0 in registry with segment_anything.modeling.pvtv2.pvt_v2_b0. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:397: UserWarning: Overwriting pvt_v2_b1 in registry with segment_anything.modeling.pvtv2.pvt_v2_b1. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:405: UserWarning: Overwriting pvt_v2_b2 in registry with segment_anything.modeling.pvtv2.pvt_v2_b2. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:413: UserWarning: Overwriting pvt_v2_b3 in registry with segment_anything.modeling.pvtv2.pvt_v2_b3. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:421: UserWarning: Overwriting pvt_v2_b4 in registry with segment_anything.modeling.pvtv2.pvt_v2_b4. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:430: UserWarning: Overwriting pvt_v2_b5 in registry with segment_anything.modeling.pvtv2.pvt_v2_b5. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/build_sam.py:161: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(f)
+/root/autodl-tmp/DSAM/segment_anything/build_sam.py:166: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  save_model = torch.load(path)
+image number: 250
+  0%|                                                                                                                                                                           | 0/250 [00:00<?, ?it/s][ WARN:0@6.053] global loadsave.cpp:1089 imwrite_ Unsupported depth image for selected encoder is fallbacked to CV_8U.
+  0%|▋                                                                                                                                                                  | 1/250 [00:01<04:25,  1.07s/it]  1%|█▎                                                                                                                                                                 | 2/250 [00:02<04:23,  1.06s/it]  1%|█▉                                                                                                                                                                 | 3/250 [00:03<04:24,  1.07s/it]  2%|██▌                                                                                                                                                                | 4/250 [00:04<04:00,  1.02it/s]  2%|███▎                                                                                                                                                               | 5/250 [00:04<03:13,  1.27it/s]  2%|███▉                                                                                                                                                               | 6/250 [00:05<02:57,  1.37it/s]  3%|████▌                                                                                                                                                              | 7/250 [00:05<03:05,  1.31it/s]  3%|█████▏                                                                                                                                                             | 8/250 [00:06<02:59,  1.35it/s]  4%|█████▊                                                                                                                                                             | 9/250 [00:08<04:06,  1.02s/it]  4%|██████▍                                                                                                                                                           | 10/250 [00:08<03:24,  1.17it/s]  4%|███████▏                                                                                                                                                          | 11/250 [00:09<03:07,  1.28it/s]  5%|███████▊                                                                                                                                                          | 12/250 [00:09<02:49,  1.40it/s]  5%|████████▍                                                                                                                                                         | 13/250 [00:10<02:30,  1.58it/s]  6%|█████████                                                                                                                                                         | 14/250 [00:11<02:36,  1.51it/s]  6%|█████████▋                                                                                                                                                        | 15/250 [00:11<02:34,  1.52it/s]  6%|██████████▎                                                                                                                                                       | 16/250 [00:12<02:18,  1.69it/s]  7%|███████████                                                                                                                                                       | 17/250 [00:12<02:12,  1.76it/s]  7%|███████████▋                                                                                                                                                      | 18/250 [00:13<02:16,  1.70it/s]  8%|████████████▎                                                                                                                                                     | 19/250 [00:13<02:09,  1.78it/s]  8%|████████████▉                                                                                                                                                     | 20/250 [00:14<02:27,  1.56it/s]  8%|█████████████▌                                                                                                                                                    | 21/250 [00:15<02:46,  1.38it/s]  9%|██████████████▎                                                                                                                                                   | 22/250 [00:16<02:51,  1.33it/s]  9%|██████████████▉                                                                                                                                                   | 23/250 [00:17<02:51,  1.32it/s] 10%|███████████████▌                                                                                                                                                  | 24/250 [00:17<02:42,  1.39it/s] 10%|████████████████▏                                                                                                                                                 | 25/250 [00:18<02:38,  1.42it/s] 10%|████████████████▊                                                                                                                                                 | 26/250 [00:19<02:33,  1.46it/s] 11%|█████████████████▍                                                                                                                                                | 27/250 [00:20<03:20,  1.11it/s] 11%|██████████████████▏                                                                                                                                               | 28/250 [00:21<03:03,  1.21it/s] 12%|██████████████████▊                                                                                                                                               | 29/250 [00:21<02:53,  1.28it/s] 12%|███████████████████▍                                                                                                                                              | 30/250 [00:22<02:54,  1.26it/s] 12%|████████████████████                                                                                                                                              | 31/250 [00:23<02:29,  1.47it/s] 13%|████████████████████▋                                                                                                                                             | 32/250 [00:23<02:37,  1.38it/s] 13%|█████████████████████▍                                                                                                                                            | 33/250 [00:24<02:17,  1.58it/s] 14%|██████████████████████                                                                                                                                            | 34/250 [00:25<02:37,  1.37it/s] 14%|██████████████████████▋                                                                                                                                           | 35/250 [00:26<02:51,  1.26it/s] 14%|███████████████████████▎                                                                                                                                          | 36/250 [00:27<03:42,  1.04s/it] 15%|███████████████████████▉                                                                                                                                          | 37/250 [00:28<03:37,  1.02s/it] 15%|████████████████████████▌                                                                                                                                         | 38/250 [00:29<02:56,  1.20it/s] 16%|█████████████████████████▎                                                                                                                                        | 39/250 [00:30<03:18,  1.06it/s] 16%|█████████████████████████▉                                                                                                                                        | 40/250 [00:31<03:14,  1.08it/s] 16%|██████████████████████████▌                                                                                                                                       | 41/250 [00:31<02:55,  1.19it/s] 17%|███████████████████████████▏                                                                                                                                      | 42/250 [00:32<02:44,  1.26it/s] 17%|███████████████████████████▊                                                                                                                                      | 43/250 [00:33<02:35,  1.33it/s] 18%|████████████████████████████▌                                                                                                                                     | 44/250 [00:34<02:34,  1.33it/s] 18%|█████████████████████████████▏                                                                                                                                    | 45/250 [00:34<02:18,  1.48it/s] 18%|█████████████████████████████▊                                                                                                                                    | 46/250 [00:35<02:11,  1.56it/s] 19%|██████████████████████████████▍                                                                                                                                   | 47/250 [00:35<02:05,  1.61it/s] 19%|███████████████████████████████                                                                                                                                   | 48/250 [00:36<02:28,  1.36it/s] 20%|███████████████████████████████▊                                                                                                                                  | 49/250 [00:51<16:29,  4.92s/it] 20%|████████████████████████████████▍                                                                                                                                 | 50/250 [00:51<11:57,  3.59s/it] 20%|█████████████████████████████████                                                                                                                                 | 51/250 [00:52<09:00,  2.72s/it] 21%|█████████████████████████████████▋                                                                                                                                | 52/250 [00:53<06:55,  2.10s/it] 21%|██████████████████████████████████▎                                                                                                                               | 53/250 [00:53<05:37,  1.71s/it] 22%|██████████████████████████████████▉                                                                                                                               | 54/250 [00:54<04:50,  1.48s/it] 22%|███████████████████████████████████▋                                                                                                                              | 55/250 [00:55<03:58,  1.22s/it] 22%|████████████████████████████████████▎                                                                                                                             | 56/250 [00:56<03:35,  1.11s/it] 23%|████████████████████████████████████▉                                                                                                                             | 57/250 [00:57<03:11,  1.01it/s] 23%|█████████████████████████████████████▌                                                                                                                            | 58/250 [00:58<03:12,  1.00s/it] 24%|██████████████████████████████████████▏                                                                                                                           | 59/250 [00:58<02:51,  1.12it/s] 24%|██████████████████████████████████████▉                                                                                                                           | 60/250 [00:59<02:28,  1.28it/s] 24%|███████████████████████████████████████▌                                                                                                                          | 61/250 [01:00<02:27,  1.28it/s] 25%|████████████████████████████████████████▏                                                                                                                         | 62/250 [01:04<06:06,  1.95s/it] 25%|████████████████████████████████████████▊                                                                                                                         | 63/250 [01:05<05:02,  1.62s/it] 26%|█████████████████████████████████████████▍                                                                                                                        | 64/250 [01:06<04:27,  1.44s/it] 26%|██████████████████████████████████████████                                                                                                                        | 65/250 [01:07<03:58,  1.29s/it] 26%|██████████████████████████████████████████▊                                                                                                                       | 66/250 [01:08<03:49,  1.25s/it] 27%|███████████████████████████████████████████▍                                                                                                                      | 67/250 [01:09<03:16,  1.07s/it] 27%|████████████████████████████████████████████                                                                                                                      | 68/250 [01:10<03:21,  1.11s/it] 28%|████████████████████████████████████████████▋                                                                                                                     | 69/250 [01:11<03:18,  1.10s/it] 28%|█████████████████████████████████████████████▎                                                                                                                    | 70/250 [01:12<02:48,  1.07it/s] 28%|██████████████████████████████████████████████                                                                                                                    | 71/250 [01:12<02:35,  1.15it/s] 29%|██████████████████████████████████████████████▋                                                                                                                   | 72/250 [01:13<02:24,  1.23it/s] 29%|███████████████████████████████████████████████▎                                                                                                                  | 73/250 [01:41<26:34,  9.01s/it] 30%|███████████████████████████████████████████████▉                                                                                                                  | 74/250 [01:42<19:14,  6.56s/it] 30%|████████████████████████████████████████████████▌                                                                                                                 | 75/250 [01:43<14:26,  4.95s/it] 30%|█████████████████████████████████████████████████▏                                                                                                                | 76/250 [01:44<10:48,  3.73s/it] 31%|█████████████████████████████████████████████████▉                                                                                                                | 77/250 [01:45<08:06,  2.81s/it]the number of images: 1 and the name of image: camourflage_00012.jpg
+the boundary_grad is produced now!!
+the number of images: 2 and the name of image: camourflage_00018.jpg
+the boundary_grad is produced now!!
+the number of images: 3 and the name of image: camourflage_00061.jpg
+the boundary_grad is produced now!!
+the number of images: 4 and the name of image: camourflage_00064.jpg
+the boundary_grad is produced now!!
+the number of images: 5 and the name of image: camourflage_00071.jpg
+the boundary_grad is produced now!!
+the number of images: 6 and the name of image: camourflage_00079.jpg
+the boundary_grad is produced now!!
+the number of images: 7 and the name of image: camourflage_00087.jpg
+the boundary_grad is produced now!!
+the number of images: 8 and the name of image: camourflage_00088.jpg
+the boundary_grad is produced now!!
+the number of images: 9 and the name of image: camourflage_00090.jpg
+the boundary_grad is produced now!!
+the number of images: 10 and the name of image: camourflage_00097.jpg
+the boundary_grad is produced now!!
+the number of images: 11 and the name of image: camourflage_00098.jpg
+the boundary_grad is produced now!!
+the number of images: 12 and the name of image: camourflage_00100.jpg
+the boundary_grad is produced now!!
+the number of images: 13 and the name of image: camourflage_00102.jpg
+the boundary_grad is produced now!!
+the number of images: 14 and the name of image: camourflage_00112.jpg
+the boundary_grad is produced now!!
+the number of images: 15 and the name of image: camourflage_00114.jpg
+the boundary_grad is produced now!!
+the number of images: 16 and the name of image: camourflage_00120.jpg
+the boundary_grad is produced now!!
+the number of images: 17 and the name of image: camourflage_00122.jpg
+the boundary_grad is produced now!!
+the number of images: 18 and the name of image: camourflage_00124.jpg
+the boundary_grad is produced now!!
+the number of images: 19 and the name of image: camourflage_00129.jpg
+the boundary_grad is produced now!!
+the number of images: 20 and the name of image: camourflage_00135.jpg
+the boundary_grad is produced now!!
+the number of images: 21 and the name of image: camourflage_00138.jpg
+the boundary_grad is produced now!!
+the number of images: 22 and the name of image: camourflage_00141.jpg
+the boundary_grad is produced now!!
+the number of images: 23 and the name of image: camourflage_00145.jpg
+the boundary_grad is produced now!!
+the number of images: 24 and the name of image: camourflage_00147.jpg
+the boundary_grad is produced now!!
+the number of images: 25 and the name of image: camourflage_00153.jpg
+the boundary_grad is produced now!!
+the number of images: 26 and the name of image: camourflage_00156.jpg
+the boundary_grad is produced now!!
+the number of images: 27 and the name of image: camourflage_00160.jpg
+the boundary_grad is produced now!!
+the number of images: 28 and the name of image: camourflage_00166.jpg
+the boundary_grad is produced now!!
+the number of images: 29 and the name of image: camourflage_00169.jpg
+the boundary_grad is produced now!!
+the number of images: 30 and the name of image: camourflage_00171.jpg
+the boundary_grad is produced now!!
+the number of images: 31 and the name of image: camourflage_00175.jpg
+the boundary_grad is produced now!!
+the number of images: 32 and the name of image: camourflage_00183.jpg
+the boundary_grad is produced now!!
+the number of images: 33 and the name of image: camourflage_00196.jpg
+the boundary_grad is produced now!!
+the number of images: 34 and the name of image: camourflage_00197.jpg
+the boundary_grad is produced now!!
+the number of images: 35 and the name of image: camourflage_00205.jpg
+the boundary_grad is produced now!!
+the number of images: 36 and the name of image: camourflage_00207.jpg
+the boundary_grad is produced now!!
+the number of images: 37 and the name of image: camourflage_00208.jpg
+the boundary_grad is produced now!!
+the number of images: 38 and the name of image: camourflage_00209.jpg
+the boundary_grad is produced now!!
+the number of images: 39 and the name of image: camourflage_00224.jpg
+the boundary_grad is produced now!!
+the number of images: 40 and the name of image: camourflage_00232.jpg
+the boundary_grad is produced now!!
+the number of images: 41 and the name of image: camourflage_00235.jpg
+the boundary_grad is produced now!!
+the number of images: 42 and the name of image: camourflage_00257.jpg
+the boundary_grad is produced now!!
+the number of images: 43 and the name of image: camourflage_00259.jpg
+the boundary_grad is produced now!!
+the number of images: 44 and the name of image: camourflage_00266.jpg
+the boundary_grad is produced now!!
+the number of images: 45 and the name of image: camourflage_00269.jpg
+the boundary_grad is produced now!!
+the number of images: 46 and the name of image: camourflage_00270.jpg
+the boundary_grad is produced now!!
+the number of images: 47 and the name of image: camourflage_00273.jpg
+the boundary_grad is produced now!!
+the number of images: 48 and the name of image: camourflage_00275.jpg
+the boundary_grad is produced now!!
+the number of images: 49 and the name of image: camourflage_00285.jpg
+the boundary_grad is produced now!!
+the number of images: 50 and the name of image: camourflage_00310.jpg
+the boundary_grad is produced now!!
+the number of images: 51 and the name of image: camourflage_00332.jpg
+the boundary_grad is produced now!!
+the number of images: 52 and the name of image: camourflage_00333.jpg
+the boundary_grad is produced now!!
+the number of images: 53 and the name of image: camourflage_00337.jpg
+the boundary_grad is produced now!!
+the number of images: 54 and the name of image: camourflage_00348.jpg
+the boundary_grad is produced now!!
+the number of images: 55 and the name of image: camourflage_00351.jpg
+the boundary_grad is produced now!!
+the number of images: 56 and the name of image: camourflage_00361.jpg
+the boundary_grad is produced now!!
+the number of images: 57 and the name of image: camourflage_00364.jpg
+the boundary_grad is produced now!!
+the number of images: 58 and the name of image: camourflage_00365.jpg
+the boundary_grad is produced now!!
+the number of images: 59 and the name of image: camourflage_00381.jpg
+the boundary_grad is produced now!!
+the number of images: 60 and the name of image: camourflage_00398.jpg
+the boundary_grad is produced now!!
+the number of images: 61 and the name of image: camourflage_00406.jpg
+the boundary_grad is produced now!!
+the number of images: 62 and the name of image: camourflage_00408.jpg
+the boundary_grad is produced now!!
+the number of images: 63 and the name of image: camourflage_00420.jpg
+the boundary_grad is produced now!!
+the number of images: 64 and the name of image: camourflage_00421.jpg
+the boundary_grad is produced now!!
+the number of images: 65 and the name of image: camourflage_00422.jpg
+the boundary_grad is produced now!!
+the number of images: 66 and the name of image: camourflage_00430.jpg
+the boundary_grad is produced now!!
+the number of images: 67 and the name of image: camourflage_00435.jpg
+the boundary_grad is produced now!!
+the number of images: 68 and the name of image: camourflage_00436.jpg
+the boundary_grad is produced now!!
+the number of images: 69 and the name of image: camourflage_00443.jpg
+the boundary_grad is produced now!!
+the number of images: 70 and the name of image: camourflage_00444.jpg
+the boundary_grad is produced now!!
+the number of images: 71 and the name of image: camourflage_00449.jpg
+the boundary_grad is produced now!!
+the number of images: 72 and the name of image: camourflage_00463.jpg
+the boundary_grad is produced now!!
+the number of images: 73 and the name of image: camourflage_00470.jpg
+the boundary_grad is produced now!!
+the number of images: 74 and the name of image: camourflage_00471.jpg
+the boundary_grad is produced now!!
+the number of images: 75 and the name of image: camourflage_00473.jpg
+the boundary_grad is produced now!!
+the number of images: 76 and the name of image: camourflage_00478.jpg
+the boundary_grad is produced now!!
+the number of images: 77 and the name of image: camourflage_00496.jpg
+the boundary_grad is produced now!!
+ 31%|██████████████████████████████████████████████████▌                                                                                                               | 78/250 [01:45<06:06,  2.13s/it] 32%|███████████████████████████████████████████████████▏                                                                                                              | 79/250 [01:47<05:28,  1.92s/it] 32%|███████████████████████████████████████████████████▊                                                                                                              | 80/250 [01:47<04:21,  1.54s/it] 32%|████████████████████████████████████████████████████▍                                                                                                             | 81/250 [01:48<03:42,  1.32s/it] 33%|█████████████████████████████████████████████████████▏                                                                                                            | 82/250 [01:49<03:15,  1.16s/it] 33%|█████████████████████████████████████████████████████▊                                                                                                            | 83/250 [01:50<03:14,  1.16s/it] 34%|██████████████████████████████████████████████████████▍                                                                                                           | 84/250 [01:51<03:02,  1.10s/it] 34%|███████████████████████████████████████████████████████                                                                                                           | 85/250 [01:52<02:36,  1.05it/s] 34%|███████████████████████████████████████████████████████▋                                                                                                          | 86/250 [01:52<02:21,  1.16it/s] 35%|████████████████████████████████████████████████████████▍                                                                                                         | 87/250 [01:53<02:08,  1.27it/s] 35%|█████████████████████████████████████████████████████████                                                                                                         | 88/250 [01:54<02:18,  1.17it/s] 36%|█████████████████████████████████████████████████████████▋                                                                                                        | 89/250 [01:55<02:03,  1.31it/s] 36%|██████████████████████████████████████████████████████████▎                                                                                                       | 90/250 [01:56<02:20,  1.14it/s] 36%|██████████████████████████████████████████████████████████▉                                                                                                       | 91/250 [01:57<02:21,  1.12it/s] 37%|███████████████████████████████████████████████████████████▌                                                                                                      | 92/250 [01:57<02:14,  1.18it/s] 37%|████████████████████████████████████████████████████████████▎                                                                                                     | 93/250 [01:59<02:29,  1.05it/s] 38%|████████████████████████████████████████████████████████████▉                                                                                                     | 94/250 [01:59<02:08,  1.22it/s] 38%|█████████████████████████████████████████████████████████████▌                                                                                                    | 95/250 [02:01<02:56,  1.14s/it] 38%|██████████████████████████████████████████████████████████████▏                                                                                                   | 96/250 [02:02<03:05,  1.21s/it] 39%|██████████████████████████████████████████████████████████████▊                                                                                                   | 97/250 [02:03<02:49,  1.11s/it] 39%|███████████████████████████████████████████████████████████████▌                                                                                                  | 98/250 [02:05<03:28,  1.37s/it] 40%|████████████████████████████████████████████████████████████████▏                                                                                                 | 99/250 [02:06<03:14,  1.29s/it] 40%|████████████████████████████████████████████████████████████████▍                                                                                                | 100/250 [02:07<02:50,  1.13s/it] 40%|█████████████████████████████████████████████████████████████████                                                                                                | 101/250 [02:10<03:55,  1.58s/it] 41%|█████████████████████████████████████████████████████████████████▋                                                                                               | 102/250 [02:13<04:58,  2.02s/it] 41%|██████████████████████████████████████████████████████████████████▎                                                                                              | 103/250 [02:14<04:03,  1.65s/it] 42%|██████████████████████████████████████████████████████████████████▉                                                                                              | 104/250 [02:14<03:27,  1.42s/it] 42%|███████████████████████████████████████████████████████████████████▌                                                                                             | 105/250 [02:15<02:50,  1.18s/it] 42%|████████████████████████████████████████████████████████████████████▎                                                                                            | 106/250 [02:16<02:25,  1.01s/it] 43%|████████████████████████████████████████████████████████████████████▉                                                                                            | 107/250 [02:16<02:13,  1.07it/s] 43%|█████████████████████████████████████████████████████████████████████▌                                                                                           | 108/250 [02:18<02:38,  1.11s/it] 44%|██████████████████████████████████████████████████████████████████████▏                                                                                          | 109/250 [02:19<02:36,  1.11s/it] 44%|██████████████████████████████████████████████████████████████████████▊                                                                                          | 110/250 [02:20<02:28,  1.06s/it] 44%|███████████████████████████████████████████████████████████████████████▍                                                                                         | 111/250 [02:21<02:13,  1.04it/s] 45%|████████████████████████████████████████████████████████████████████████▏                                                                                        | 112/250 [02:21<02:00,  1.15it/s] 45%|████████████████████████████████████████████████████████████████████████▊                                                                                        | 113/250 [02:23<02:16,  1.00it/s] 46%|█████████████████████████████████████████████████████████████████████████▍                                                                                       | 114/250 [02:24<02:19,  1.03s/it] 46%|██████████████████████████████████████████████████████████████████████████                                                                                       | 115/250 [02:25<02:20,  1.04s/it] 46%|██████████████████████████████████████████████████████████████████████████▋                                                                                      | 116/250 [02:26<02:26,  1.10s/it] 47%|███████████████████████████████████████████████████████████████████████████▎                                                                                     | 117/250 [02:27<02:16,  1.03s/it] 47%|███████████████████████████████████████████████████████████████████████████▉                                                                                     | 118/250 [02:34<06:27,  2.94s/it] 48%|████████████████████████████████████████████████████████████████████████████▋                                                                                    | 119/250 [02:35<04:47,  2.19s/it] 48%|█████████████████████████████████████████████████████████████████████████████▎                                                                                   | 120/250 [02:36<04:15,  1.97s/it] 48%|█████████████████████████████████████████████████████████████████████████████▉                                                                                   | 121/250 [02:37<03:39,  1.70s/it] 49%|██████████████████████████████████████████████████████████████████████████████▌                                                                                  | 122/250 [02:39<03:25,  1.61s/it] 49%|███████████████████████████████████████████████████████████████████████████████▏                                                                                 | 123/250 [02:39<02:40,  1.26s/it] 50%|███████████████████████████████████████████████████████████████████████████████▊                                                                                 | 124/250 [02:40<02:23,  1.14s/it] 50%|████████████████████████████████████████████████████████████████████████████████▌                                                                                | 125/250 [02:41<01:59,  1.05it/s] 50%|█████████████████████████████████████████████████████████████████████████████████▏                                                                               | 126/250 [02:41<01:45,  1.18it/s] 51%|█████████████████████████████████████████████████████████████████████████████████▊                                                                               | 127/250 [02:42<01:33,  1.32it/s] 51%|██████████████████████████████████████████████████████████████████████████████████▍                                                                              | 128/250 [02:42<01:21,  1.49it/s] 52%|███████████████████████████████████████████████████████████████████████████████████                                                                              | 129/250 [02:43<01:14,  1.63it/s] 52%|███████████████████████████████████████████████████████████████████████████████████▋                                                                             | 130/250 [02:43<01:10,  1.71it/s] 52%|████████████████████████████████████████████████████████████████████████████████████▎                                                                            | 131/250 [02:44<01:07,  1.77it/s] 53%|█████████████████████████████████████████████████████████████████████████████████████                                                                            | 132/250 [02:45<01:15,  1.55it/s] 53%|█████████████████████████████████████████████████████████████████████████████████████▋                                                                           | 133/250 [02:46<01:32,  1.27it/s] 54%|██████████████████████████████████████████████████████████████████████████████████████▎                                                                          | 134/250 [02:47<01:54,  1.02it/s] 54%|██████████████████████████████████████████████████████████████████████████████████████▉                                                                          | 135/250 [02:49<02:09,  1.12s/it] 54%|███████████████████████████████████████████████████████████████████████████████████████▌                                                                         | 136/250 [02:49<01:56,  1.02s/it] 55%|████████████████████████████████████████████████████████████████████████████████████████▏                                                                        | 137/250 [02:51<02:13,  1.18s/it] 55%|████████████████████████████████████████████████████████████████████████████████████████▊                                                                        | 138/250 [02:51<01:53,  1.01s/it] 56%|█████████████████████████████████████████████████████████████████████████████████████████▌                                                                       | 139/250 [02:52<01:35,  1.16it/s] 56%|██████████████████████████████████████████████████████████████████████████████████████████▏                                                                      | 140/250 [02:52<01:20,  1.36it/s] 56%|██████████████████████████████████████████████████████████████████████████████████████████▊                                                                      | 141/250 [02:53<01:10,  1.56it/s] 57%|███████████████████████████████████████████████████████████████████████████████████████████▍                                                                     | 142/250 [02:53<01:03,  1.71it/s] 57%|████████████████████████████████████████████████████████████████████████████████████████████                                                                     | 143/250 [02:54<00:57,  1.86it/s] 58%|████████████████████████████████████████████████████████████████████████████████████████████▋                                                                    | 144/250 [02:54<00:54,  1.96it/s] 58%|█████████████████████████████████████████████████████████████████████████████████████████████▍                                                                   | 145/250 [02:55<00:52,  2.01it/s] 58%|██████████████████████████████████████████████████████████████████████████████████████████████                                                                   | 146/250 [02:55<00:49,  2.10it/s] 59%|██████████████████████████████████████████████████████████████████████████████████████████████▋                                                                  | 147/250 [02:56<00:48,  2.13it/s] 59%|███████████████████████████████████████████████████████████████████████████████████████████████▎                                                                 | 148/250 [02:56<00:47,  2.14it/s] 60%|███████████████████████████████████████████████████████████████████████████████████████████████▉                                                                 | 149/250 [02:56<00:43,  2.33it/s] 60%|████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                | 150/250 [02:57<00:48,  2.07it/s] 60%|█████████████████████████████████████████████████████████████████████████████████████████████████▏                                                               | 151/250 [02:59<01:20,  1.23it/s] 61%|█████████████████████████████████████████████████████████████████████████████████████████████████▉                                                               | 152/250 [02:59<01:24,  1.16it/s] 61%|██████████████████████████████████████████████████████████████████████████████████████████████████▌                                                              | 153/250 [03:00<01:17,  1.26it/s]the number of images: 78 and the name of image: camourflage_00498.jpg
+the boundary_grad is produced now!!
+the number of images: 79 and the name of image: camourflage_00500.jpg
+the boundary_grad is produced now!!
+the number of images: 80 and the name of image: camourflage_00502.jpg
+the boundary_grad is produced now!!
+the number of images: 81 and the name of image: camourflage_00510.jpg
+the boundary_grad is produced now!!
+the number of images: 82 and the name of image: camourflage_00515.jpg
+the boundary_grad is produced now!!
+the number of images: 83 and the name of image: camourflage_00519.jpg
+the boundary_grad is produced now!!
+the number of images: 84 and the name of image: camourflage_00522.jpg
+the boundary_grad is produced now!!
+the number of images: 85 and the name of image: camourflage_00528.jpg
+the boundary_grad is produced now!!
+the number of images: 86 and the name of image: camourflage_00539.jpg
+the boundary_grad is produced now!!
+the number of images: 87 and the name of image: camourflage_00550.jpg
+the boundary_grad is produced now!!
+the number of images: 88 and the name of image: camourflage_00563.jpg
+the boundary_grad is produced now!!
+the number of images: 89 and the name of image: camourflage_00594.jpg
+the boundary_grad is produced now!!
+the number of images: 90 and the name of image: camourflage_00597.jpg
+the boundary_grad is produced now!!
+the number of images: 91 and the name of image: camourflage_00600.jpg
+the boundary_grad is produced now!!
+the number of images: 92 and the name of image: camourflage_00602.jpg
+the boundary_grad is produced now!!
+the number of images: 93 and the name of image: camourflage_00623.jpg
+the boundary_grad is produced now!!
+the number of images: 94 and the name of image: camourflage_00631.jpg
+the boundary_grad is produced now!!
+the number of images: 95 and the name of image: camourflage_00641.jpg
+the boundary_grad is produced now!!
+the number of images: 96 and the name of image: camourflage_00647.jpg
+the boundary_grad is produced now!!
+the number of images: 97 and the name of image: camourflage_00677.jpg
+the boundary_grad is produced now!!
+the number of images: 98 and the name of image: camourflage_00688.jpg
+the boundary_grad is produced now!!
+the number of images: 99 and the name of image: camourflage_00694.jpg
+the boundary_grad is produced now!!
+the number of images: 100 and the name of image: camourflage_00699.jpg
+the boundary_grad is produced now!!
+the number of images: 101 and the name of image: camourflage_00706.jpg
+the boundary_grad is produced now!!
+the number of images: 102 and the name of image: camourflage_00713.jpg
+the boundary_grad is produced now!!
+the number of images: 103 and the name of image: camourflage_00723.jpg
+the boundary_grad is produced now!!
+the number of images: 104 and the name of image: camourflage_00750.jpg
+the boundary_grad is produced now!!
+the number of images: 105 and the name of image: camourflage_00758.jpg
+the boundary_grad is produced now!!
+the number of images: 106 and the name of image: camourflage_00768.jpg
+the boundary_grad is produced now!!
+the number of images: 107 and the name of image: camourflage_00779.jpg
+the boundary_grad is produced now!!
+the number of images: 108 and the name of image: camourflage_00782.jpg
+the boundary_grad is produced now!!
+the number of images: 109 and the name of image: camourflage_00783.jpg
+the boundary_grad is produced now!!
+the number of images: 110 and the name of image: camourflage_00794.jpg
+the boundary_grad is produced now!!
+the number of images: 111 and the name of image: camourflage_00800.jpg
+the boundary_grad is produced now!!
+the number of images: 112 and the name of image: camourflage_00801.jpg
+the boundary_grad is produced now!!
+the number of images: 113 and the name of image: camourflage_00807.jpg
+the boundary_grad is produced now!!
+the number of images: 114 and the name of image: camourflage_00829.jpg
+the boundary_grad is produced now!!
+the number of images: 115 and the name of image: camourflage_00846.jpg
+the boundary_grad is produced now!!
+the number of images: 116 and the name of image: camourflage_00847.jpg
+the boundary_grad is produced now!!
+the number of images: 117 and the name of image: camourflage_00857.jpg
+the boundary_grad is produced now!!
+the number of images: 118 and the name of image: camourflage_00860.jpg
+the boundary_grad is produced now!!
+the number of images: 119 and the name of image: camourflage_00863.jpg
+the boundary_grad is produced now!!
+the number of images: 120 and the name of image: camourflage_00869.jpg
+the boundary_grad is produced now!!
+the number of images: 121 and the name of image: camourflage_00890.jpg
+the boundary_grad is produced now!!
+the number of images: 122 and the name of image: camourflage_00903.jpg
+the boundary_grad is produced now!!
+the number of images: 123 and the name of image: camourflage_00924.jpg
+the boundary_grad is produced now!!
+the number of images: 124 and the name of image: camourflage_00928.jpg
+the boundary_grad is produced now!!
+the number of images: 125 and the name of image: camourflage_00931.jpg
+the boundary_grad is produced now!!
+the number of images: 126 and the name of image: camourflage_00939.jpg
+the boundary_grad is produced now!!
+the number of images: 127 and the name of image: camourflage_00944.jpg
+the boundary_grad is produced now!!
+the number of images: 128 and the name of image: camourflage_00959.jpg
+the boundary_grad is produced now!!
+the number of images: 129 and the name of image: camourflage_00977.jpg
+the boundary_grad is produced now!!
+the number of images: 130 and the name of image: camourflage_00985.jpg
+the boundary_grad is produced now!!
+the number of images: 131 and the name of image: camourflage_00991.jpg
+the boundary_grad is produced now!!
+the number of images: 132 and the name of image: camourflage_00997.jpg
+the boundary_grad is produced now!!
+the number of images: 133 and the name of image: camourflage_00998.jpg
+the boundary_grad is produced now!!
+the number of images: 134 and the name of image: camourflage_01001.jpg
+the boundary_grad is produced now!!
+the number of images: 135 and the name of image: camourflage_01003.jpg
+the boundary_grad is produced now!!
+the number of images: 136 and the name of image: camourflage_01004.jpg
+the boundary_grad is produced now!!
+the number of images: 137 and the name of image: camourflage_01006.jpg
+the boundary_grad is produced now!!
+the number of images: 138 and the name of image: camourflage_01008.jpg
+the boundary_grad is produced now!!
+the number of images: 139 and the name of image: camourflage_01009.jpg
+the boundary_grad is produced now!!
+the number of images: 140 and the name of image: camourflage_01014.jpg
+the boundary_grad is produced now!!
+the number of images: 141 and the name of image: camourflage_01016.jpg
+the boundary_grad is produced now!!
+the number of images: 142 and the name of image: camourflage_01018.jpg
+the boundary_grad is produced now!!
+the number of images: 143 and the name of image: camourflage_01020.jpg
+the boundary_grad is produced now!!
+the number of images: 144 and the name of image: camourflage_01021.jpg
+the boundary_grad is produced now!!
+the number of images: 145 and the name of image: camourflage_01023.jpg
+the boundary_grad is produced now!!
+the number of images: 146 and the name of image: camourflage_01025.jpg
+the boundary_grad is produced now!!
+the number of images: 147 and the name of image: camourflage_01027.jpg
+the boundary_grad is produced now!!
+the number of images: 148 and the name of image: camourflage_01030.jpg
+the boundary_grad is produced now!!
+the number of images: 149 and the name of image: camourflage_01032.jpg
+the boundary_grad is produced now!!
+the number of images: 150 and the name of image: camourflage_01034.jpg
+the boundary_grad is produced now!!
+the number of images: 151 and the name of image: camourflage_01041.jpg
+the boundary_grad is produced now!!
+the number of images: 152 and the name of image: camourflage_01044.jpg
+the boundary_grad is produced now!!
+the number of images: 153 and the name of image: camourflage_01046.jpg
+the boundary_grad is produced now!!
+the number of images: 154 and the name of image: camourflage_01048.jpg
+ 62%|███████████████████████████████████████████████████████████████████████████████████████████████████▏                                                             | 154/250 [03:01<01:26,  1.11it/s] 62%|███████████████████████████████████████████████████████████████████████████████████████████████████▊                                                             | 155/250 [03:02<01:13,  1.28it/s] 62%|████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                            | 156/250 [03:03<01:23,  1.12it/s] 63%|█████████████████████████████████████████████████████████████████████████████████████████████████████                                                            | 157/250 [03:04<01:24,  1.10it/s] 63%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                           | 158/250 [03:05<01:17,  1.19it/s] 64%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                          | 159/250 [03:05<01:05,  1.40it/s] 64%|███████████████████████████████████████████████████████████████████████████████████████████████████████                                                          | 160/250 [03:05<00:54,  1.66it/s] 64%|███████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 161/250 [03:06<00:49,  1.78it/s] 65%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                        | 162/250 [03:06<00:46,  1.90it/s] 65%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                        | 163/250 [03:07<00:43,  1.99it/s] 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                       | 164/250 [03:07<00:41,  2.07it/s] 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                      | 165/250 [03:08<00:40,  2.12it/s] 66%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                      | 166/250 [03:08<00:38,  2.16it/s] 67%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                     | 167/250 [03:08<00:38,  2.17it/s] 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                    | 168/250 [03:09<00:38,  2.14it/s] 68%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                    | 169/250 [03:09<00:37,  2.16it/s] 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                   | 170/250 [03:10<00:36,  2.20it/s] 68%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                   | 171/250 [03:10<00:35,  2.21it/s] 69%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                  | 172/250 [03:11<00:35,  2.22it/s] 69%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                 | 173/250 [03:11<00:34,  2.24it/s] 70%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                 | 174/250 [03:12<00:37,  2.03it/s] 70%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                | 175/250 [03:13<00:58,  1.28it/s] 70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                               | 176/250 [03:16<01:38,  1.33s/it] 71%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                               | 177/250 [03:16<01:19,  1.09s/it] 71%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                              | 178/250 [03:20<02:19,  1.94s/it] 72%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                             | 179/250 [03:21<01:46,  1.50s/it] 72%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                             | 180/250 [03:22<01:36,  1.38s/it] 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                            | 181/250 [03:23<01:24,  1.22s/it] 73%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                           | 182/250 [03:24<01:30,  1.33s/it] 73%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                           | 183/250 [03:25<01:22,  1.24s/it] 74%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                          | 184/250 [03:27<01:28,  1.34s/it] 74%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                         | 185/250 [03:28<01:20,  1.24s/it] 74%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                         | 186/250 [03:28<01:04,  1.00s/it] 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                        | 187/250 [03:29<01:04,  1.02s/it] 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                        | 188/250 [03:31<01:06,  1.07s/it] 76%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                       | 189/250 [03:32<01:05,  1.08s/it] 76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                      | 190/250 [03:33<01:07,  1.13s/it] 76%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                      | 191/250 [03:34<01:12,  1.23s/it] 77%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                     | 192/250 [03:37<01:27,  1.51s/it] 77%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                    | 193/250 [03:37<01:16,  1.34s/it] 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                    | 194/250 [03:39<01:17,  1.39s/it] 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                   | 195/250 [03:40<01:14,  1.36s/it] 78%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                  | 196/250 [03:42<01:19,  1.47s/it] 79%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                  | 197/250 [03:43<01:13,  1.39s/it] 79%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                 | 198/250 [03:44<01:06,  1.29s/it] 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                | 199/250 [03:46<01:15,  1.48s/it] 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                | 200/250 [03:48<01:20,  1.60s/it] 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                               | 201/250 [03:49<01:13,  1.50s/it] 81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                               | 202/250 [03:51<01:10,  1.48s/it] 81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                              | 203/250 [03:52<01:05,  1.40s/it] 82%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                             | 204/250 [03:53<00:53,  1.15s/it] 82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                             | 205/250 [03:53<00:43,  1.04it/s] 82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                            | 206/250 [03:54<00:36,  1.22it/s] 83%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                           | 207/250 [03:54<00:34,  1.24it/s] 83%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                           | 208/250 [03:55<00:33,  1.24it/s] 84%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                          | 209/250 [03:56<00:29,  1.37it/s] 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                         | 210/250 [03:56<00:26,  1.53it/s] 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                         | 211/250 [03:57<00:23,  1.66it/s] 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                        | 212/250 [03:57<00:21,  1.74it/s] 85%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                       | 213/250 [03:58<00:21,  1.69it/s] 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                       | 214/250 [03:59<00:26,  1.37it/s] 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                      | 215/250 [03:59<00:23,  1.48it/s] 86%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                      | 216/250 [04:01<00:27,  1.22it/s] 87%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                     | 217/250 [04:01<00:23,  1.38it/s] 87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 218/250 [04:02<00:20,  1.53it/s] 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                    | 219/250 [04:02<00:19,  1.63it/s] 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                   | 220/250 [04:03<00:17,  1.71it/s] 88%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                  | 221/250 [04:03<00:16,  1.78it/s] 89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                  | 222/250 [04:04<00:15,  1.84it/s] 89%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                 | 223/250 [04:04<00:14,  1.89it/s] 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                | 224/250 [04:05<00:13,  1.93it/s] 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                | 225/250 [04:05<00:12,  1.94it/s] 90%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌               | 226/250 [04:06<00:17,  1.37it/s] 91%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏              | 227/250 [04:07<00:18,  1.26it/s] 91%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 228/250 [04:09<00:23,  1.07s/it] 92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍             | 229/250 [04:10<00:22,  1.09s/it] 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████             | 230/250 [04:13<00:34,  1.73s/it]the boundary_grad is produced now!!
+the number of images: 155 and the name of image: camourflage_01050.jpg
+the boundary_grad is produced now!!
+the number of images: 156 and the name of image: camourflage_01052.jpg
+the boundary_grad is produced now!!
+the number of images: 157 and the name of image: camourflage_01053.jpg
+the boundary_grad is produced now!!
+the number of images: 158 and the name of image: camourflage_01056.jpg
+the boundary_grad is produced now!!
+the number of images: 159 and the name of image: camourflage_01058.jpg
+the boundary_grad is produced now!!
+the number of images: 160 and the name of image: camourflage_01064.jpg
+the boundary_grad is produced now!!
+the number of images: 161 and the name of image: camourflage_01066.jpg
+the boundary_grad is produced now!!
+the number of images: 162 and the name of image: camourflage_01067.jpg
+the boundary_grad is produced now!!
+the number of images: 163 and the name of image: camourflage_01068.jpg
+the boundary_grad is produced now!!
+the number of images: 164 and the name of image: camourflage_01070.jpg
+the boundary_grad is produced now!!
+the number of images: 165 and the name of image: camourflage_01072.jpg
+the boundary_grad is produced now!!
+the number of images: 166 and the name of image: camourflage_01074.jpg
+the boundary_grad is produced now!!
+the number of images: 167 and the name of image: camourflage_01075.jpg
+the boundary_grad is produced now!!
+the number of images: 168 and the name of image: camourflage_01078.jpg
+the boundary_grad is produced now!!
+the number of images: 169 and the name of image: camourflage_01081.jpg
+the boundary_grad is produced now!!
+the number of images: 170 and the name of image: camourflage_01082.jpg
+the boundary_grad is produced now!!
+the number of images: 171 and the name of image: camourflage_01087.jpg
+the boundary_grad is produced now!!
+the number of images: 172 and the name of image: camourflage_01090.jpg
+the boundary_grad is produced now!!
+the number of images: 173 and the name of image: camourflage_01091.jpg
+the boundary_grad is produced now!!
+the number of images: 174 and the name of image: camourflage_01094.jpg
+the boundary_grad is produced now!!
+the number of images: 175 and the name of image: camourflage_01095.jpg
+the boundary_grad is produced now!!
+the number of images: 176 and the name of image: camourflage_01096.jpg
+the boundary_grad is produced now!!
+the number of images: 177 and the name of image: camourflage_01098.jpg
+the boundary_grad is produced now!!
+the number of images: 178 and the name of image: camourflage_01100.jpg
+the boundary_grad is produced now!!
+the number of images: 179 and the name of image: camourflage_01101.jpg
+the boundary_grad is produced now!!
+the number of images: 180 and the name of image: camourflage_01103.jpg
+the boundary_grad is produced now!!
+the number of images: 181 and the name of image: camourflage_01104.jpg
+the boundary_grad is produced now!!
+the number of images: 182 and the name of image: camourflage_01105.jpg
+the boundary_grad is produced now!!
+the number of images: 183 and the name of image: camourflage_01106.jpg
+the boundary_grad is produced now!!
+the number of images: 184 and the name of image: camourflage_01107.jpg
+the boundary_grad is produced now!!
+the number of images: 185 and the name of image: camourflage_01110.jpg
+the boundary_grad is produced now!!
+the number of images: 186 and the name of image: camourflage_01112.jpg
+the boundary_grad is produced now!!
+the number of images: 187 and the name of image: camourflage_01113.jpg
+the boundary_grad is produced now!!
+the number of images: 188 and the name of image: camourflage_01115.jpg
+the boundary_grad is produced now!!
+the number of images: 189 and the name of image: camourflage_01116.jpg
+the boundary_grad is produced now!!
+the number of images: 190 and the name of image: camourflage_01117.jpg
+the boundary_grad is produced now!!
+the number of images: 191 and the name of image: camourflage_01118.jpg
+the boundary_grad is produced now!!
+the number of images: 192 and the name of image: camourflage_01122.jpg
+the boundary_grad is produced now!!
+the number of images: 193 and the name of image: camourflage_01126.jpg
+the boundary_grad is produced now!!
+the number of images: 194 and the name of image: camourflage_01128.jpg
+the boundary_grad is produced now!!
+the number of images: 195 and the name of image: camourflage_01131.jpg
+the boundary_grad is produced now!!
+the number of images: 196 and the name of image: camourflage_01132.jpg
+the boundary_grad is produced now!!
+the number of images: 197 and the name of image: camourflage_01133.jpg
+the boundary_grad is produced now!!
+the number of images: 198 and the name of image: camourflage_01135.jpg
+the boundary_grad is produced now!!
+the number of images: 199 and the name of image: camourflage_01137.jpg
+the boundary_grad is produced now!!
+the number of images: 200 and the name of image: camourflage_01139.jpg
+the boundary_grad is produced now!!
+the number of images: 201 and the name of image: camourflage_01140.jpg
+the boundary_grad is produced now!!
+the number of images: 202 and the name of image: camourflage_01141.jpg
+the boundary_grad is produced now!!
+the number of images: 203 and the name of image: camourflage_01143.jpg
+the boundary_grad is produced now!!
+the number of images: 204 and the name of image: camourflage_01144.jpg
+the boundary_grad is produced now!!
+the number of images: 205 and the name of image: camourflage_01145.jpg
+the boundary_grad is produced now!!
+the number of images: 206 and the name of image: camourflage_01148.jpg
+the boundary_grad is produced now!!
+the number of images: 207 and the name of image: camourflage_01150.jpg
+the boundary_grad is produced now!!
+the number of images: 208 and the name of image: camourflage_01151.jpg
+the boundary_grad is produced now!!
+the number of images: 209 and the name of image: camourflage_01154.jpg
+the boundary_grad is produced now!!
+the number of images: 210 and the name of image: camourflage_01156.jpg
+the boundary_grad is produced now!!
+the number of images: 211 and the name of image: camourflage_01158.jpg
+the boundary_grad is produced now!!
+the number of images: 212 and the name of image: camourflage_01159.jpg
+the boundary_grad is produced now!!
+the number of images: 213 and the name of image: camourflage_01161.jpg
+the boundary_grad is produced now!!
+the number of images: 214 and the name of image: camourflage_01163.jpg
+the boundary_grad is produced now!!
+the number of images: 215 and the name of image: camourflage_01164.jpg
+the boundary_grad is produced now!!
+the number of images: 216 and the name of image: camourflage_01165.jpg
+the boundary_grad is produced now!!
+the number of images: 217 and the name of image: camourflage_01168.jpg
+the boundary_grad is produced now!!
+the number of images: 218 and the name of image: camourflage_01170.jpg
+the boundary_grad is produced now!!
+the number of images: 219 and the name of image: camourflage_01172.jpg
+the boundary_grad is produced now!!
+the number of images: 220 and the name of image: camourflage_01175.jpg
+the boundary_grad is produced now!!
+the number of images: 221 and the name of image: camourflage_01177.jpg
+the boundary_grad is produced now!!
+the number of images: 222 and the name of image: camourflage_01179.jpg
+the boundary_grad is produced now!!
+the number of images: 223 and the name of image: camourflage_01180.jpg
+the boundary_grad is produced now!!
+the number of images: 224 and the name of image: camourflage_01181.jpg
+the boundary_grad is produced now!!
+the number of images: 225 and the name of image: camourflage_01182.jpg
+the boundary_grad is produced now!!
+the number of images: 226 and the name of image: camourflage_01183.jpg
+the boundary_grad is produced now!!
+the number of images: 227 and the name of image: camourflage_01185.jpg
+the boundary_grad is produced now!!
+the number of images: 228 and the name of image: camourflage_01188.jpg
+the boundary_grad is produced now!!
+the number of images: 229 and the name of image: camourflage_01189.jpg
+the boundary_grad is produced now!!
+the number of images: 230 and the name of image: camourflage_01190.jpg
+the boundary_grad is produced now!!
+ 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊            | 231/250 [04:15<00:29,  1.57s/it] 93%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍           | 232/250 [04:16<00:26,  1.50s/it] 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████           | 233/250 [04:17<00:21,  1.24s/it] 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋          | 234/250 [04:17<00:17,  1.08s/it] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎         | 235/250 [04:18<00:16,  1.08s/it] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉         | 236/250 [04:20<00:16,  1.16s/it] 95%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋        | 237/250 [04:21<00:14,  1.10s/it] 95%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 238/250 [04:22<00:12,  1.07s/it] 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉       | 239/250 [04:36<00:55,  5.05s/it] 96%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌      | 240/250 [04:37<00:37,  3.79s/it] 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏     | 241/250 [04:38<00:26,  2.97s/it] 97%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊     | 242/250 [04:38<00:17,  2.25s/it] 97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍    | 243/250 [04:39<00:12,  1.78s/it] 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 244/250 [04:40<00:09,  1.59s/it] 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊   | 245/250 [04:42<00:07,  1.55s/it] 98%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍  | 246/250 [05:00<00:26,  6.64s/it] 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  | 247/250 [05:01<00:14,  4.88s/it] 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋ | 248/250 [05:02<00:07,  3.74s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 249/250 [05:03<00:02,  2.82s/it]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [05:04<00:00,  2.48s/it]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [05:04<00:00,  1.22s/it]
+the number of images: 231 and the name of image: camourflage_01192.jpg
+the boundary_grad is produced now!!
+the number of images: 232 and the name of image: camourflage_01193.jpg
+the boundary_grad is produced now!!
+the number of images: 233 and the name of image: camourflage_01194.jpg
+the boundary_grad is produced now!!
+the number of images: 234 and the name of image: camourflage_01195.jpg
+the boundary_grad is produced now!!
+the number of images: 235 and the name of image: camourflage_01196.jpg
+the boundary_grad is produced now!!
+the number of images: 236 and the name of image: camourflage_01199.jpg
+the boundary_grad is produced now!!
+the number of images: 237 and the name of image: camourflage_01200.jpg
+the boundary_grad is produced now!!
+the number of images: 238 and the name of image: camourflage_01205.jpg
+the boundary_grad is produced now!!
+the number of images: 239 and the name of image: camourflage_01208.jpg
+the boundary_grad is produced now!!
+the number of images: 240 and the name of image: camourflage_01210.jpg
+the boundary_grad is produced now!!
+the number of images: 241 and the name of image: camourflage_01211.jpg
+the boundary_grad is produced now!!
+the number of images: 242 and the name of image: camourflage_01217.jpg
+the boundary_grad is produced now!!
+the number of images: 243 and the name of image: camourflage_01235.jpg
+the boundary_grad is produced now!!
+the number of images: 244 and the name of image: camourflage_01240.jpg
+the boundary_grad is produced now!!
+the number of images: 245 and the name of image: camourflage_01242.jpg
+the boundary_grad is produced now!!
+the number of images: 246 and the name of image: camourflage_01243.jpg
+the boundary_grad is produced now!!
+the number of images: 247 and the name of image: camourflage_01244.jpg
+the boundary_grad is produced now!!
+the number of images: 248 and the name of image: camourflage_01245.jpg
+the boundary_grad is produced now!!
+the number of images: 249 and the name of image: camourflage_01247.jpg
+the boundary_grad is produced now!!
+the number of images: 250 and the name of image: camourflage_01250.jpg
+the boundary_grad is produced now!!
+the number of processed images: 250
+Num. of images: 250
+===== 推理CAMO =====
+/root/miniconda3/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/root/miniconda3/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:387: UserWarning: Overwriting pvt_v2_b0 in registry with segment_anything.modeling.pvtv2.pvt_v2_b0. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:397: UserWarning: Overwriting pvt_v2_b1 in registry with segment_anything.modeling.pvtv2.pvt_v2_b1. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:405: UserWarning: Overwriting pvt_v2_b2 in registry with segment_anything.modeling.pvtv2.pvt_v2_b2. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:413: UserWarning: Overwriting pvt_v2_b3 in registry with segment_anything.modeling.pvtv2.pvt_v2_b3. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:421: UserWarning: Overwriting pvt_v2_b4 in registry with segment_anything.modeling.pvtv2.pvt_v2_b4. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/modeling/pvtv2.py:430: UserWarning: Overwriting pvt_v2_b5 in registry with segment_anything.modeling.pvtv2.pvt_v2_b5. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  @register_model
+/root/autodl-tmp/DSAM/segment_anything/build_sam.py:161: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(f)
+/root/autodl-tmp/DSAM/segment_anything/build_sam.py:166: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  save_model = torch.load(path)
+  0%|                                                                                                                                                                             | 0/1 [00:00<?, ?it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:00<00:00, 60.33s/it]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:00<00:00, 60.33s/it]
+Final mDSC: 0.8227353240284895
+===== 评估CAMO =====
+/root/autodl-tmp/DSAM/py_sod_metrics/sod_metrics.py:35: UserWarning: This class will be removed in the future, please use FmeasureV2 instead!
+  warnings.warn("This class will be removed in the future, please use FmeasureV2 instead!")
+GT total: 250
+Pred total: 250
+  0%|                                                                                                                                                                           | 0/250 [00:00<?, ?it/s]  1%|█▎                                                                                                                                                                 | 2/250 [00:00<00:24, 10.01it/s]  2%|██▌                                                                                                                                                                | 4/250 [00:00<00:21, 11.38it/s]  3%|████▌                                                                                                                                                              | 7/250 [00:00<00:14, 16.77it/s]  4%|█████▊                                                                                                                                                             | 9/250 [00:00<00:20, 11.93it/s]  6%|█████████                                                                                                                                                         | 14/250 [00:00<00:12, 19.38it/s]  8%|████████████▎                                                                                                                                                     | 19/250 [00:00<00:08, 26.11it/s]  9%|██████████████▉                                                                                                                                                   | 23/250 [00:01<00:10, 22.21it/s] 10%|████████████████▊                                                                                                                                                 | 26/250 [00:01<00:09, 23.60it/s] 12%|██████████████████▊                                                                                                                                               | 29/250 [00:01<00:10, 20.30it/s] 13%|████████████████████▋                                                                                                                                             | 32/250 [00:01<00:10, 21.18it/s] 14%|██████████████████████▋                                                                                                                                           | 35/250 [00:01<00:10, 20.52it/s] 15%|████████████████████████▌                                                                                                                                         | 38/250 [00:02<00:13, 16.24it/s] 16%|█████████████████████████▉                                                                                                                                        | 40/250 [00:02<00:14, 14.86it/s] 17%|███████████████████████████▊                                                                                                                                      | 43/250 [00:02<00:11, 17.34it/s] 19%|██████████████████████████████▍                                                                                                                                   | 47/250 [00:02<00:09, 21.18it/s] 20%|████████████████████████████████▍                                                                                                                                 | 50/250 [00:05<01:04,  3.10it/s] 21%|█████████████████████████████████▋                                                                                                                                | 52/250 [00:05<00:52,  3.75it/s] 22%|██████████████████████████████████▉                                                                                                                               | 54/250 [00:05<00:44,  4.36it/s] 22%|████████████████████████████████████▎                                                                                                                             | 56/250 [00:06<00:37,  5.15it/s] 23%|█████████████████████████████████████▌                                                                                                                            | 58/250 [00:06<00:32,  5.88it/s] 24%|███████████████████████████████████████▌                                                                                                                          | 61/250 [00:06<00:24,  7.73it/s] 25%|████████████████████████████████████████▊                                                                                                                         | 63/250 [00:07<00:51,  3.66it/s] 26%|██████████████████████████████████████████                                                                                                                        | 65/250 [00:08<00:43,  4.29it/s] 26%|██████████████████████████████████████████▊                                                                                                                       | 66/250 [00:08<00:41,  4.46it/s] 27%|████████████████████████████████████████████                                                                                                                      | 68/250 [00:08<00:34,  5.33it/s] 28%|█████████████████████████████████████████████▎                                                                                                                    | 70/250 [00:08<00:26,  6.74it/s] 29%|███████████████████████████████████████████████▎                                                                                                                  | 73/250 [00:14<02:27,  1.20it/s] 30%|████████████████████████████████████████████████▌                                                                                                                 | 75/250 [00:14<01:50,  1.59it/s] 31%|██████████████████████████████████████████████████▌                                                                                                               | 78/250 [00:14<01:10,  2.43it/s] 32%|███████████████████████████████████████████████████▊                                                                                                              | 80/250 [00:14<00:55,  3.04it/s] 33%|█████████████████████████████████████████████████████▏                                                                                                            | 82/250 [00:14<00:42,  3.92it/s] 34%|██████████████████████████████████████████████████████▍                                                                                                           | 84/250 [00:14<00:34,  4.77it/s] 35%|█████████████████████████████████████████████████████████                                                                                                         | 88/250 [00:15<00:22,  7.36it/s] 36%|██████████████████████████████████████████████████████████▎                                                                                                       | 90/250 [00:15<00:19,  8.42it/s] 37%|███████████████████████████████████████████████████████████▌                                                                                                      | 92/250 [00:15<00:16,  9.64it/s] 38%|████████████████████████████████████████████████████████████▉                                                                                                     | 94/250 [00:15<00:14, 10.93it/s] 38%|██████████████████████████████████████████████████████████████▏                                                                                                   | 96/250 [00:15<00:13, 11.24it/s] 39%|███████████████████████████████████████████████████████████████▌                                                                                                  | 98/250 [00:15<00:15,  9.66it/s] 40%|████████████████████████████████████████████████████████████████▍                                                                                                | 100/250 [00:16<00:13, 10.71it/s] 41%|█████████████████████████████████████████████████████████████████▋                                                                                               | 102/250 [00:16<00:23,  6.24it/s] 42%|██████████████████████████████████████████████████████████████████▉                                                                                              | 104/250 [00:16<00:18,  7.77it/s] 43%|█████████████████████████████████████████████████████████████████████▌                                                                                           | 108/250 [00:17<00:13, 10.17it/s] 44%|██████████████████████████████████████████████████████████████████████▊                                                                                          | 110/250 [00:17<00:13, 10.50it/s] 45%|████████████████████████████████████████████████████████████████████████▊                                                                                        | 113/250 [00:17<00:11, 12.07it/s] 46%|██████████████████████████████████████████████████████████████████████████                                                                                       | 115/250 [00:17<00:10, 12.37it/s] 47%|███████████████████████████████████████████████████████████████████████████▎                                                                                     | 117/250 [00:17<00:10, 12.27it/s] 48%|████████████████████████████████████████████████████████████████████████████▋                                                                                    | 119/250 [00:18<00:29,  4.42it/s] 48%|█████████████████████████████████████████████████████████████████████████████▎                                                                                   | 120/250 [00:19<00:27,  4.73it/s] 49%|██████████████████████████████████████████████████████████████████████████████▌                                                                                  | 122/250 [00:19<00:22,  5.63it/s] 50%|█████████████████████████████████████████████████████████████████████████████████▏                                                                               | 126/250 [00:19<00:13,  9.44it/s] 53%|█████████████████████████████████████████████████████████████████████████████████████                                                                            | 132/250 [00:19<00:07, 15.81it/s] 54%|██████████████████████████████████████████████████████████████████████████████████████▉                                                                          | 135/250 [00:19<00:08, 13.07it/s] 55%|████████████████████████████████████████████████████████████████████████████████████████▊                                                                        | 138/250 [00:20<00:08, 13.08it/s] 60%|███████████████████████████████████████████████████████████████████████████████████████████████▉                                                                 | 149/250 [00:20<00:03, 27.22it/s] 62%|███████████████████████████████████████████████████████████████████████████████████████████████████▏                                                             | 154/250 [00:20<00:03, 24.50it/s] 63%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                           | 158/250 [00:20<00:04, 22.79it/s] 68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                   | 170/250 [00:20<00:02, 38.42it/s] 70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                               | 176/250 [00:21<00:03, 24.01it/s] 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                            | 181/250 [00:22<00:04, 14.90it/s] 74%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                         | 185/250 [00:22<00:04, 14.14it/s] 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                        | 188/250 [00:22<00:04, 14.31it/s] 76%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                      | 191/250 [00:22<00:04, 12.60it/s] 77%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                    | 193/250 [00:23<00:04, 12.27it/s] 78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                   | 195/250 [00:23<00:04, 12.68it/s] 79%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                  | 197/250 [00:23<00:04, 13.13it/s] 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                | 199/250 [00:23<00:03, 13.65it/s] 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                               | 201/250 [00:23<00:03, 13.01it/s] 81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                              | 203/250 [00:23<00:03, 11.83it/s] 83%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                           | 208/250 [00:23<00:02, 18.17it/s] 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                       | 214/250 [00:24<00:01, 25.02it/s] 87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 218/250 [00:24<00:01, 27.73it/s] 90%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌               | 226/250 [00:24<00:00, 36.30it/s] 92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████             | 230/250 [00:24<00:01, 16.69it/s] 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████           | 233/250 [00:25<00:01, 15.51it/s] 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉         | 236/250 [00:25<00:00, 16.02it/s] 96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉       | 239/250 [00:27<00:02,  4.21it/s] 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏     | 241/250 [00:27<00:01,  4.87it/s] 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 244/250 [00:27<00:00,  6.27it/s] 98%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍  | 246/250 [00:31<00:01,  2.01it/s] 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋ | 248/250 [00:31<00:00,  2.51it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:31<00:00,  3.08it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [00:31<00:00,  7.87it/s]
+
+===== Evaluation Results =====
+Valid samples: 250
+Smeasure:0.829; wFmeasure:0.795; meanFm:0.826; meanEm:0.916; maxEm:0.92; MAE:0.061; adpEm:0.92; adpFm:0.824; maxFm:0.834

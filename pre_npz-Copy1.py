@@ -90,49 +90,6 @@ depth_embeddings = []
 global num_of_processed_imgs
 num_of_processed_imgs = 0
 
-CHUNK_SIZE = 1000
-chunk_idx = 0
-
-
-def save_chunk():
-    global chunk_idx
-    if len(imgs) == 0:
-        return
-    print(f"Saving chunk {chunk_idx} with {len(imgs)} images...")
-    os.makedirs(join(save_path, args.data_name), exist_ok=True)
-    _imgs = np.stack(imgs, axis=0)
-    _gts = np.stack(gts, axis=0)
-    _depth_imgs = np.stack(depth_imgs, axis=0)
-    _img_embeddings = np.stack(img_embeddings, axis=0)
-    _depth_embeddings = np.stack(depth_embeddings, axis=0)
-    _boundary = np.stack(boundary, axis=0)
-    np.savez_compressed(
-        join(save_path, args.data_name, f"{args.data_name}_part{chunk_idx}.npz"),
-        imgs=_imgs,
-        gts=_gts,
-        depth_imgs=_depth_imgs,
-        number=number,
-        img_embeddings=_img_embeddings,
-        boundary=_boundary,
-        depth_embeddings=_depth_embeddings,
-    )
-    # save an example image for sanity check
-    idx = np.random.randint(_imgs.shape[0])
-    img_idx = _imgs[idx, :, :, :].copy()
-    gt_idx = _gts[idx, :, :]
-    bd = segmentation.find_boundaries(gt_idx, mode="inner")
-    img_idx[bd, :] = [255, 0, 0]
-    io.imsave(save_path + ".png", img_idx, check_contrast=False)
-
-    imgs.clear()
-    gts.clear()
-    depth_imgs.clear()
-    number.clear()
-    boundary.clear()
-    img_embeddings.clear()
-    depth_embeddings.clear()
-    chunk_idx += 1
-
 
 sam_model = sam_model_registry[args.model_type](checkpoint=args.checkpoint).to(
     args.device
@@ -349,8 +306,6 @@ def process(gt_name: str, image_name: str, num_of_processed_imgs:int):
             depth_embeddings.append(depth_embedding.cpu().numpy()[0])
 # end of depth_img -->depth_img embedding
 
-    if len(imgs) >= CHUNK_SIZE:
-        save_chunk()
     return num_of_processed_imgs
 
 
@@ -381,9 +336,32 @@ else:
 
 # stack the list to array
 print("Num. of images:", len(imgs))
-if len(imgs) > 0:
-    save_chunk()
-    print("the number of processed images: " + str(num_of_processed_imgs))
+if len(imgs) > 1:
+    # The features are stacked and become embedding
+    imgs = np.stack(imgs, axis=0)  # (n, 256, 256, 3)
+    gts = np.stack(gts, axis=0)  # (n, 256, 256)
+    depth_imgs = np.stack(depth_imgs, axis=0)  # (n, 256, 256)
+    img_embeddings = np.stack(img_embeddings, axis=0)  # (n, 1, 256, 64, 64)
+    depth_embeddings = np.stack(depth_embeddings, axis=0)  # (n, 1, 256, 64, 64)
+    boundary = np.stack(boundary, axis=0)  # (n, 256, 256)
+    np.savez_compressed(
+        # join(save_path, args.data_name + ".npz"),
+        join(save_path, args.data_name, args.data_name + ".npz"),
+        imgs=imgs,
+        gts=gts,
+        depth_imgs=depth_imgs,
+        number=number,
+        img_embeddings=img_embeddings,
+        boundary=boundary,
+        depth_embeddings=depth_embeddings,
+    )
+    # save an example image for sanity check
+    idx = np.random.randint(imgs.shape[0])
+    img_idx = imgs[idx, :, :, :]
+    gt_idx = gts[idx, :, :]
+    bd = segmentation.find_boundaries(gt_idx, mode="inner")
+    img_idx[bd, :] = [255, 0, 0]
+    io.imsave(save_path + ".png", img_idx, check_contrast=False)
 else:
     print(
         "Do not find image and ground-truth pairs. Please check your dataset and argument settings"

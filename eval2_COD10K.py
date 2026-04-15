@@ -78,12 +78,12 @@ print("Valid samples:", valid_count)
 print(
     'Smeasure:', sm.round(3), '; ',
     'wFmeasure:', wfm.round(3), '; ',
-    'MAE:', mae.round(3), '; ',
-    'adpEm:', em['adp'].round(3), '; ',
+    'meanFm:', fm['curve'].mean().round(3), '; ',
     'meanEm:', '-' if em['curve'] is None else em['curve'].mean().round(3), '; ',
     'maxEm:', '-' if em['curve'] is None else em['curve'].max().round(3), '; ',
+    'MAE:', mae.round(3), '; ',
+    'adpEm:', em['adp'].round(3), '; ',
     'adpFm:', fm['adp'].round(3), '; ',
-    'meanFm:', fm['curve'].mean().round(3), '; ',
     'maxFm:', fm['curve'].max().round(3),
     sep=''
 )
@@ -93,8 +93,13 @@ with open("result_COD10K.txt", "a+") as f:
     print(
         'CAMO -> ',
         'Smeasure:', sm.round(3), '; ',
-        'meanEm:', '-' if em['curve'] is None else em['curve'].mean().round(3), '; ',
         'wFmeasure:', wfm.round(3), '; ',
+        'meanFm:', fm['curve'].mean().round(3), '; ',
+        'meanEm:', '-' if em['curve'] is None else em['curve'].mean().round(3), '; ',
+        'maxEm:', '-' if em['curve'] is None else em['curve'].max().round(3), '; ',
         'MAE:', mae.round(3), '; ',
+        'adpEm:', em['adp'].round(3), '; ',
+        'adpFm:', fm['adp'].round(3), '; ',
+        'maxFm:', fm['curve'].max().round(3),
         file=f
     )

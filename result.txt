@@ -1,1 +1,2 @@
 CAMO ->  Smeasure: 0.817 ;  meanEm: 0.902 ;  wFmeasure: 0.786 ;  MAE: 0.065 ; 
+CAMO ->  Smeasure: 0.829 ;  wFmeasure: 0.795 ;  meanFm: 0.826 ;  meanEm: 0.916 ;  maxEm: 0.92 ;  MAE: 0.061 ;  adpEm: 0.92 ;  adpFm: 0.824 ;  maxFm: 0.834
